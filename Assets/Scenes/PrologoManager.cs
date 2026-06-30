@@ -52,13 +52,14 @@ public class PrologoManager : MonoBehaviour
         {
             foreach (char c in frase)
             {
-                testoPrologo.text += c;
-
                 // Suona solo se il carattere non è uno spazio (opzionale)
                 if (c != ' ' && sfxSource != null)
                 {
                     sfxSource.PlayOneShot(sfxSource.clip);
                 }
+                testoPrologo.text += c;
+
+               
 
                 yield return new WaitForSeconds(velocitaScrittura);
             }
