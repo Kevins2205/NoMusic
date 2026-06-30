@@ -9,7 +9,7 @@ public class PrologoManager : MonoBehaviour
     public AudioSource audioSource; // Per la canzone
     public AudioSource sfxSource;   // NUOVO: Per il suono tastiera
     public float velocitaScrittura = 0.1f;
-    public string scenaProssima = "MainMenu";
+    public string scenaProssima = "intro_3";
 
     [System.Serializable]
     public struct FraseTimed
@@ -34,9 +34,9 @@ public class PrologoManager : MonoBehaviour
         new FraseTimed { testo = "(Musica)", tempoAttesa = 2.5f },
         new FraseTimed { testo = "Mondoooo questa canzone è peeer te", tempoAttesa = 5f },
         new FraseTimed { testo = "(Musica)", tempoAttesa = 1.5f },
-        new FraseTimed { testo = "Questa canzone andrà su tutte le classifiche,", tempoAttesa = 4f },
-        new FraseTimed { testo = "Sarà l'unica cosa che sentire-te.", tempoAttesa = 3.5f },
-        new FraseTimed { testo = "Questa è la canzone: Paaatto col Diavolo.", tempoAttesa = 7f }
+        new FraseTimed { testo = "Questa canzone andrà su tutte le classifiche", tempoAttesa = 4f },
+        new FraseTimed { testo = "Sarà l'unica cosa che sentire-te", tempoAttesa = 3.5f },
+        new FraseTimed { testo = "Questa è la canzone: Patto col Diavolo.", tempoAttesa = 7f }
     };
 
     void Start()
